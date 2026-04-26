@@ -1,14 +1,16 @@
-FROM node:24-alpine
+FROM mcr.microsoft.com/devcontainers/javascript-node:24-bookworm
 
 WORKDIR /app
 
-RUN apk add --no-cache git
+RUN chown node:node /app
 
-COPY package*.json ./
+USER node
+
+COPY --chown=node:node package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY --chown=node:node . .
 
 EXPOSE 3000
 
