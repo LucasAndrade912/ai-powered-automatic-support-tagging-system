@@ -1,0 +1,3 @@
+FROM ollama/ollama:latest
+RUN ollama serve & sleep 15 && ollama pull llama3.2:3b && ollama list && pkill ollama
+CMD ["serve"]
