@@ -19,14 +19,15 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "type": "commonjs",
+    "type": "module",
     "bugs": {
         "url": "https://github.com/LucasAndrade912/ai-powered-automatic-support-tagging-system/issues"
     },
     "homepage": "https://github.com/LucasAndrade912/ai-powered-automatic-support-tagging-system#readme",
     "dependencies": {
-        "@langchain/core": "^1.1.41",
-        "langchain": "^1.3.4"
+        "@langchain/core": "^1.1.44",
+        "@langchain/ollama": "^1.2.7",
+        "langchain": "^1.3.5"
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
